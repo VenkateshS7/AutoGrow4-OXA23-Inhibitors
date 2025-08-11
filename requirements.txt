@@ -1,0 +1,15 @@
+# Core dependencies for AutoGrow4 OXA-23 project
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+networkx
+rdkit-pypi
+openbabel
+pybel
+tqdm
+matplotlib
+meeko
+pdb-tools
+func-timeout

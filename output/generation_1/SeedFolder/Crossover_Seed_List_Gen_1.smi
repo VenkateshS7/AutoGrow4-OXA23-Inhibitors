@@ -1,0 +1,5 @@
+CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C	Benzyl_penicillin			
+CC1([C@@H](N2[C@H](S1(=O)=O)CC2=O)C(=O)O)C	Sulbactam			
+O=C(O)CCn1cnc2cc(Cl)c(OCl)cc2c1=O	DClOBzPA			
+CC1=C[C@@H]2CN(C(=O)N2OS(=O)(=O)O)[C@@H]1C(N)=O	Durlobactam			
+CC1=NC=C(C=N1)OC2=NC3=C(C4=C(N3)C(=CC(=C4)F)NC)C(=N2)N5CC(=C(C)[C@@H](C)N)C5	FluAzPyInAm			

@@ -1,0 +1,41 @@
+# Large output files
+*.log
+*.out
+*_all_poses.pdbqt
+temp_*
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.pyo
+
+# Large data files (optional - comment out if you want to include them)
+# *.pdbqt
+# *.pdb
+
+# Backup files
+*~
+*.bak
+*.orig
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Conda/Python environments
+conda_env/
+venv/
+env/
+
+# Results that can be regenerated
+results/large_output_files/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini

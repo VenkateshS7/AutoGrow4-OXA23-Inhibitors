@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  autogrow4:
+    image: autogrow4:latest
+    container_name: autogrow4-oxa23
+    
+    volumes:
+      - ./input:/UserFiles:rw              
+      - ./output:/Outputfolder:rw            
+      - ./config:/UserFiles/config:ro      
+      
+    environment:
+      - PYTHONPATH=/autogrow4
+      - PYTHONUNBUFFERED=1
+      - OMP_NUM_THREADS=4
+      - OPENBLAS_NUM_THREADS=4
+      - MKL_NUM_THREADS=4
+      - NUMEXPR_NUM_THREADS=4
+      
+    deploy:
+      resources:
+        limits:
+          cpus: '3.5'
+          memory: 12G
+          
+    command: python RunAutogrow.py -j /autogrow4/config/config.json
+    restart: unless-stopped
+    working_dir: /autogrow4
